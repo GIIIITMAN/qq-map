@@ -1,0 +1,109 @@
+<div  class="container">
+	<div id="dataSourceDom" class="datasource"></div>
+	<div class="html-editor-container">
+		<div>{{locale.panelIntro}}</div>
+		<p>{{locale.panelDesc}}</p>
+		<hr/>
+		<table>
+			<tr>
+				<td>{{locale.panelWidth}}</td>
+				<td><input name="panelWidth" type="number" max="300" min="50"/>px</td>
+				<td>{{locale.panelHeight}}</td>
+				<td><input name="panelHeight" type="number" min="50" max="300"/>px</td>
+			</tr>
+		</table>
+		<div class="button-container">
+			<button id="previewBtn">{{locale.genPreview}}</button>
+			<button id="saveBtn">{{locale.save}}</button>
+			<button id="backBtn">{{locale.back}}</button>
+		</div>
+		<div class="htmlEditor"></div>
+		<hr/>
+		<div class="preview-area">
+			<div><span>{{locale.contentPreview}}</span></div>
+			<div id="preview" class="sample-panel"></div>
+		</div>
+	</div>
+	<div class="setting">
+		<table>
+			<tr>
+				<td>{{locale.apiKey}}</td>
+				<td colspan="2"><input type="text" name="apiKey" class=""/></td>
+			</tr>
+			<tr>
+				<td>{{locale.autoPosition}}</td>
+				<td colspan="2"><input type="checkbox" name="autoPosition"/><span class="tip">{{locale.autoPositionTip}}</span></td>
+			</tr>
+			<tr>
+				<td>{{locale.boundLocation}}</td>
+				<td colspan="2"><input type="text" name="boundLocation"/></td>
+			</tr>
+			<tr>
+				<td>{{locale.originCenter.label}}</td>
+				<td>
+					<span>{{locale.originCenter.latLabel}}</span><input type="number" name="latitude" class="latlng-input" value="39.9"/><br/>
+					<span>{{locale.originCenter.lngLabel}}</span><input type="number" name="longitude"  class="latlng-input" value="116.4"/>
+				</td>
+			</tr>
+			<tr>
+				<td>{{locale.kbdEnabled}}</td>
+				<td colspan="2"><input type="checkbox" name="kbdEnabled" /></td>
+			</tr>
+			<tr>
+				<td>{{locale.wheelEnabled}}</td>
+				<td colspan="2"><input type="checkbox" name="wheelEnabled" /></td>
+			</tr>
+			<tr>
+				<td>{{locale.draggable}}</td>
+				<td colspan="2"><input type="checkbox" name="draggable" /></td>
+			</tr>
+			<tr>
+				<td>{{locale.doubleClick}}</td>
+				<td colspan="2"><input type="checkbox" name="doubleClick" /></td>
+			</tr>
+			<tr>
+				<td>{{locale.disableUI}}</td>
+				<td colspan="2"><input type="checkbox" name="disableUI" /></td>
+			</tr>
+			<tr>
+				<td>{{locale.scaleCtrl}}</td>
+				<td colspan="2"><input type="checkbox" name="scaleCtrl" /></td>
+			</tr>
+			<tr>
+				<td>{{locale.mapTypeCtrl}}</td>
+				<td colspan="2"><input type="checkbox" name="mapTypeCtrl" /></td>
+			</tr>
+			<tr>
+				<td>{{locale.markOnClick}}</td>
+				<td colspan="2"><input type="checkbox" name="markOnClick" /></td>
+			</tr>
+			<tr>
+				<td>{{locale.enableSearch}}</td>
+				<td colspan="2"><input type="checkbox" name="enableSearch" /></td>
+			</tr>
+			<tr>
+				<td>{{locale.enablePOI}}</td>
+				<td colspan="2"><input type="checkbox" name="enablePOI" /></td>
+			</tr>
+			<tr>
+				<td>{{locale.zoomLevel.label}}</td>
+				<td>
+					<span>{{locale.zoomLevel.min}}</span><input type="number" name="zoomMin" class="latlng-input"/><br/>
+					<span>{{locale.zoomLevel.max}}</span><input type="number" name="zoomMax"  class="latlng-input"/>
+				</td>
+			</tr>
+			<tr>
+				<td>{{locale.trafficLayer}}</td>
+				<td colspan="2"><input type="checkbox" name="trafficLayer" /></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td colspan="2"><button id="editorPanBtn" class="">{{locale.customPanel}}</button></td>
+			</tr>
+			<tr>
+				<td>{{locale.contextMenu}}</td>
+				<td colspan="2"><input type="text" name="contextMenu" placeholder="{{locale.contextMenuPlaceholder}}"/></td>
+			</tr>
+		</table>
+	</div>
+</div>

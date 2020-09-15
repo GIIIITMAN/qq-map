@@ -1,0 +1,17 @@
+node_modules
+coverage/
+*.log
+npm-debug.log
+.logs/
+logs/
+*.swp
+run/
+*-run/
+.idea/
+.DS_Store
+assembly
+.nodejs-cache
+build
+release
+preview
+pnpm-lock.yaml

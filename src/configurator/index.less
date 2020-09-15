@@ -1,0 +1,81 @@
+*:focus {
+    outline: none;
+}
+html {
+    height: 100%;
+}
+body {
+    font-size: 62.5%;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    height: 100%;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+}
+.datasource {
+  width: 70%;
+  border-right: 1px solid #ccc;
+}
+
+.hidden {
+  display: none;
+}
+
+.html-editor-container {
+  width: 65%;
+  border-right: 1px solid #ccc;
+  padding: 5px 10px;
+
+  .sample-panel {
+    border: dashed;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: rgb(70, 70, 138);
+    margin: 5px auto;
+    overflow: hidden;
+    word-wrap: break-word;
+  }
+
+  .button-container {
+    text-align: right;
+
+    button {
+      font-size: 12px;
+      margin-right: 10px;
+    }
+  }
+}
+
+
+.setting {
+  flex: 1;
+  padding: 5px;
+  font-size: 12px;
+
+  td:first-child {
+    text-align: right;
+    width: 150px;
+  }
+  td {
+    padding: 5px 5px 5px 0;
+    
+    .tip {
+      margin-left: 5px;
+      color: #ae0000;
+    }
+    
+  }
+  input {
+    font-size: 14px;
+    margin: 2px 0;
+
+    &.latlng-input {
+      width: 80px;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "presets": [
+    ["@babel/preset-env", {
+      "targets": {
+         "browsers": ["Chrome >= 49", "Safari >= 10", "IE >= 11"]
+      }
+    }]
+  ]
+}
